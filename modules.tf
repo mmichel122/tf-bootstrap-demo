@@ -1,5 +1,5 @@
 module "mm-tf-demo-vpc" {
-  source                = "github.com/mmichel122/terraform-aws-vpc_module"
+  source                = "github.com/mmichel122/tf-aws-simple-vpc"
   env_name              = "demo-tf-dev"
   vpc_cidr              = "192.168.0.0/16"
   sub_count             = 2
