@@ -5,10 +5,12 @@ module "mm-tf-demo-vpc" {
   vm-count              = 2
   workspace_name        = var.workspace_name
   workspace_team        = var.workspace_team
+  region                = var.region
 }
 
 module "mm-tf-demo-lambda" {
   source                = "github.com/mmichel122/tf-aws-lambda-email"
   workspace_name        = var.workspace_name
   workspace_team        = var.workspace_team
+  region                = var.region
 }
